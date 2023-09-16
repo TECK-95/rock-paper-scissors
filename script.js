@@ -17,6 +17,8 @@ function playerSelection() {
 }
 
 function playRound(playerSelection, getComputerChoice) {
+    playerSelection()
+    getComputerChoice()
     if (computerChooses===plChoice) {
         console.log("It's a Draw!");
     } else if (computerChooses==="Rock"&&plChoice==="Paper") {
