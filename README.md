@@ -1,0 +1,1 @@
+In this prooject I will create a rock paper scissors game, using javascript. I will attempt to demonstrate my newfound knowledge in using functions and if statements and display results in the console.
