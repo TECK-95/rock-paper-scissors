@@ -10,5 +10,7 @@ function getComputerChoice(choice) {
     return "The Computer Chose: " + computerChooses;
 }
 
-prompt("Welcome to Rock, Paper, Scissors! Make your choice below:")
-
+function playerSelection() {
+    let plChoice = prompt("Welcome to Rock, Paper, Scissors! Make your choice below:");
+    plChoice = plChoice.charAt(0).toUpperCase + plChoice.slice(1);
+}
