@@ -9,3 +9,6 @@ function getComputerChoice(choice) {
     }
     return "The Computer Chose: " + computerChooses;
 }
+
+prompt("Welcome to Rock, Paper, Scissors! Make your choice below:")
+
