@@ -75,16 +75,16 @@ function playRound(playerSelection, getComputerChoice) {
 }   
 
 function game(playRound) {
+    games = 0;
+    playerScore = 0;
+    computerScore = 0;
     console.log("Games:" + games + " Score: You:" + playerScore + " Computer:" + computerScore)
-    for (playerScore===0&&computerScore===0&&games===0; playerScore<5||computerScore<5;) {
-        if (playerScore===5) {
-            alert ("You Win! Ultimate Victory!");
-        } else if (computerScore===5) {
-            alert ("You Lose! Ultimate Defeat!");
-        } else {
-            playRound(playerSelection,getComputerChoice)
-        }
+    for (playerScore===0&&computerScore===0&&games===0; playerScore<5&&computerScore<5;) {
+        playRound(playerSelection,getComputerChoice)
+    }
+    if (playerScore===5) {
+        console.log("You Win! Ultimate Victory!");
+    } else if (computerScore===5) {
+        console.log("You Lose! Ultimate Defeat!");
     }
 }
-
-game(playRound)
