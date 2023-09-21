@@ -103,9 +103,7 @@ message.style["display:flex;"]
 const rock = document.querySelector(".rock");
 rock.addEventListener("click", () => {
     let plChoice = "Rock";
-    console.log(plChoice);
     getComputerChoice();
-    console.log(computerChooses);
     if (computerChooses===plChoice) {
         let plScore = document.querySelector(".plScore");
         let comScore = document.querySelector(".comScore");
@@ -149,15 +147,87 @@ rock.addEventListener("click", () => {
 const paper = document.querySelector(".paper");
 paper.addEventListener("click", () => {
     let plChoice = "Paper";
-    console.log(plChoice);
     getComputerChoice();
-    console.log(computerChooses);
+    if (computerChooses===plChoice) {
+        let plScore = document.querySelector(".plScore");
+        let comScore = document.querySelector(".comScore");
+        plScore.textContent = playerScore;
+        plScore.append;
+        comScore.textContent = computerScore;
+        comScore.append;
+        plChoices.textContent = ("You Chose: " + plChoice);
+        game.appendChild(plChoices);
+        comChoices.textContent = ("The Computer Chose: " + computerChooses);
+        game.appendChild(comChoices);
+        message.textContent = "It's a Draw!";
+        game.appendChild(message);
+    } else if (computerChooses==="Scissors") {
+        computerScore++;
+        let plScore = document.querySelector(".plScore");
+        let comScore = document.querySelector(".comScore");
+        comScore.textContent = computerScore;
+        comScore.append;
+        plChoices.textContent = ("You Chose: " + plChoice);
+        game.appendChild(plChoices);
+        comChoices.textContent = ("The Computer Chose: " + computerChooses);
+        game.appendChild(comChoices);
+        message.textContent = "You Lose!"
+        game.appendChild(message);
+    } else if (computerChooses==="Rock") {
+        playerScore++;
+        let plScore = document.querySelector(".plScore");
+        let comScore = document.querySelector(".comScore");
+        plScore.textContent = playerScore;
+        plScore.append;
+        plChoices.textContent = ("You Chose: " + plChoice);
+        game.appendChild(plChoices);
+        comChoices.textContent = ("The Computer Chose: " + computerChooses);
+        game.appendChild(comChoices);
+        message.textContent = "You Win!";
+        game.appendChild(message);
+    }
 });
 
 const scissors = document.querySelector(".scissors");
 scissors.addEventListener("click", () => {
     let plChoice = "Scissors";
-    console.log(plChoice);
     getComputerChoice();
-    console.log(computerChooses);
+    if (computerChooses===plChoice) {
+        let plScore = document.querySelector(".plScore");
+        let comScore = document.querySelector(".comScore");
+        plScore.textContent = playerScore;
+        plScore.append;
+        comScore.textContent = computerScore;
+        comScore.append;
+        plChoices.textContent = ("You Chose: " + plChoice);
+        game.appendChild(plChoices);
+        comChoices.textContent = ("The Computer Chose: " + computerChooses);
+        game.appendChild(comChoices);
+        message.textContent = "It's a Draw!";
+        game.appendChild(message);
+    } else if (computerChooses==="Rock") {
+        computerScore++;
+        let plScore = document.querySelector(".plScore");
+        let comScore = document.querySelector(".comScore");
+        comScore.textContent = computerScore;
+        comScore.append;
+        plChoices.textContent = ("You Chose: " + plChoice);
+        game.appendChild(plChoices);
+        comChoices.textContent = ("The Computer Chose: " + computerChooses);
+        game.appendChild(comChoices);
+        message.textContent = "You Lose!"
+        game.appendChild(message);
+    } else if (computerChooses==="Paper") {
+        playerScore++;
+        let plScore = document.querySelector(".plScore");
+        let comScore = document.querySelector(".comScore");
+        plScore.textContent = playerScore;
+        plScore.append;
+        plChoices.textContent = ("You Chose: " + plChoice);
+        game.appendChild(plChoices);
+        comChoices.textContent = ("The Computer Chose: " + computerChooses);
+        game.appendChild(comChoices);
+        message.textContent = "You Win!";
+        game.appendChild(message);
+    }
 });

@@ -26,7 +26,15 @@ h1 {
 
 .rps {
     display: flex;
+    align-items: center;
     gap: 20px;
+}
+
+.rock,
+.paper,
+.scissors {
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .scoreboard {
