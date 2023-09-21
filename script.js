@@ -14,11 +14,11 @@ function getComputerChoice() {
     return "The Computer Chose: " + computerChooses;
 }
 
-function playerSelection() {
+/*function playerSelection() {
     plChoice = prompt("Welcome to Rock, Paper, Scissors! Make Your Choice Below:")
     plChoice = plChoice.charAt(0).toUpperCase() + plChoice.slice(1)
-    return "You Chose: " + plChoice
-}
+    return "You Chose: " + plChoice;
+}*/
 
 function playRound(playerSelection, getComputerChoice) {
     console.log(playerSelection())
@@ -88,3 +88,26 @@ function game(playRound) {
         console.log("You Lose! Ultimate Defeat!");
     }
 }
+
+const rock = document.querySelector(".rock");
+rock.addEventListener("click", () => {
+    let plChoice = "Rock";
+    console.log(plChoice);
+    getComputerChoice();
+    console.log(computerChooses);
+    
+});
+const paper = document.querySelector(".paper");
+paper.addEventListener("click", () => {
+    let plChoice = "Paper";
+    console.log(plChoice);
+    getComputerChoice();
+    console.log(computerChooses);
+});
+const scissors = document.querySelector(".scissors");
+scissors.addEventListener("click", () => {
+    let plChoice = "Scissors";
+    console.log(plChoice);
+    getComputerChoice();
+    console.log(computerChooses);
+});
