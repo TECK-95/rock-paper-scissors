@@ -6,17 +6,22 @@ body {
     height: 800px;
 }
 
+h1 {
+    font-size: 36px;
+}
+
 .welcome {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
 }
 
 .game {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .rps {
@@ -26,5 +31,6 @@ body {
 
 .scoreboard {
     display: flex;
+    font-size: 24px;
     gap: 20px;
 }
